@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Kadek Adli Ananta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #1a2a6c;
+            --secondary-color: #f39c12; /* Warna Pramuka/Paskibra */
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Nav */
+        nav {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(26, 42, 108, 0.8), rgba(26, 42, 108, 0.8)), 
+                        url('https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070') no-repeat center center/cover;
+            height: 500px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3.5rem; margin-bottom: 5px; letter-spacing: 2px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; font-weight: 300; }
+
+        /* Container Utama */
+        .container {
+            max-width: 1000px;
+            margin: -60px auto 40px auto;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        /* Visi Box */
+        .vision-box {
+            background: #fff9f0;
+            border: 2px dashed var(--secondary-color);
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            font-style: italic;
+            margin: 30px 0;
+        }
+
+        /* Timeline/Card */
+        .card {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-color: var(--secondary-color);
+        }
+
+        .badge {
+            background: var(--secondary-color);
+            color: white;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Media Sosial */
+        .social-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn-social {
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-ig { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .btn-tiktok { background: #000; }
+
+        .btn-social:hover { opacity: 0.85; transform: scale(1.02); }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .container { margin-top: -40px; padding: 25px; width: 90%; }
+            .social-container { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <strong>KADEK ADLI ANANTA</strong> | Pemimpin Muda SMKN 1 Negeri Agung
+</nav>
+
+<header class="hero">
+    <h1>Kadek Adli Ananta</h1>
+    <p>Pradana Putra • Aktivis Paskibra • Organisatoris</p>
+</header>
+
+<div class="container">
+    <h2>Tentang Saya</h2>
+    <p>Saya adalah siswa dari <strong>SMKN 1 Negeri Agung</strong> yang berdedikasi tinggi dalam organisasi. Melalui kedisiplinan <strong>Paskibra</strong> dan kemandirian <strong>Pramuka</strong>, saya fokus pada pembentukan karakter kepemimpinan yang progresif.</p>
+
+    <div class="vision-box">
+        <h3>Visi Saya:</h3>
+        <p>"Mewujudkan Pramuka SMKN 1 Negeri Agung yang berkarakter, inovatif, dan menjunjung tinggi kode kehormatan gerakan pramuka."</p>
+    </div>
+
+    <h2>Riwayat Organisasi & Prestasi</h2>
+    
+    <div class="card">
+        <span class="badge">Periode 2024 - 2025</span>
+        <h3>Pradana Putra</h3>
+        <p><strong>Ambalan Radin Jambat - Fatmawati</strong><br>
+        Gugus Depan 07.067 - 07.068. Mengemban amanah sebagai pemimpin utama putra dalam mengelola manajemen organisasi dan kegiatan kepramukaan di sekolah.</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">Tahun 2023</span>
+        <h3>Peserta LPK (Latihan Pengembangan Kepemimpinan)</h3>
+        <p>Terpilih sebagai delegasi dalam kegiatan LPK tingkat daerah yang diselenggarakan oleh <strong>Kwartir Daerah Lampung</strong> di Bandar Lampung untuk memperdalam strategi tata kelola organisasi.</p>
+    </div>
+
+    <div class="card">
+        <span class="badge">Ekstrakurikuler</span>
+        <h3>Paskibra & Pramuka</h3>
+        <p>Aktif dalam mengasah ketangkasan baris-berbaris, teknik kepanduan, dan pengabdian masyarakat melalui dua organisasi pilar kedisiplinan di SMKN 1 Negeri Agung.</p>
+    </div>
+
+    <h2>Hubungi Saya</h2>
+    <div class="social-container">
+        <a href="https://www.instagram.com/4ever_2getthher" target="_blank" class="btn-social btn-ig">
+            <i class="fab fa-instagram"></i> Instagram: @4ever_2getthher
+        </a>
+        <a href="https://www.tiktok.com/@altereg_0" target="_blank" class="btn-social btn-tiktok">
+            <i class="fab fa-tiktok"></i> TikTok: @altereg_0
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Kadek Adli Ananta. <br> Ambalan Radin Jambat - Fatmawati <br> SMKN 1 Negeri Agung.</p>
+</footer>
+
+</body>
+</html>
